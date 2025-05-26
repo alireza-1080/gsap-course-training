@@ -23,12 +23,79 @@
 //   yoyo: true
 // })
 
-gsap.from(
+// gsap.from(
+//     '#text1',
+//     {
+//         x: 1000,
+//         duration: 2,
+//         stagger: 2,
+//         repeat: -1
+//     }
+// )
+
+const tl= gsap.timeline({repeat: 2, repeatDelay: 1})
+
+tl.to(
     '#text1',
     {
         x: 1000,
-        duration: 2,
-        stagger: 2,
-        repeat: -1
-    }
+        duration: 1
+    },
+)
+
+tl.to(
+    '#text1',
+    {
+        x: 0,
+        duration: 1
+    },
+    10
+)
+
+tl.to(
+    '#text2',
+    {
+        x: 1000,
+        duration: 1
+    },
+)
+
+tl.to(
+    '#text2',
+    {
+        x: 0,
+        duration: 1
+    },
+)
+
+tl.to(
+    '#text3',
+    {
+        x: 1000,
+        duration: 1
+    },
+)
+
+tl.to(
+    '#text3',
+    {
+        x: 0,
+        duration: 1
+    },
+)
+
+tl.to(
+    '#text4',
+    {
+        x: 1000,
+        duration: 1
+    },
+)
+
+tl.to(
+    '#text4',
+    {
+        x: 0,
+        duration: 1
+    },
 )
